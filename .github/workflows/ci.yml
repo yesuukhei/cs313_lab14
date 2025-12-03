@@ -18,12 +18,11 @@ jobs:
       - name: JDK 17 Тохируулах
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: "17"
+          distribution: "temurin"
       - name: Checkstyle Шалгах
         run: mvn checkstyle:check
       - name: JUnit Тест ба JaCoCo Coverage Шалгах
-        run: mvn test jacoco:check
+        run: mvn verify
       - name: JaCoCo Тайлан Үүсгэх
         run: mvn jacoco:report
-

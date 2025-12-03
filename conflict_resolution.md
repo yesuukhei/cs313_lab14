@@ -31,4 +31,3 @@ git push origin feature/add-multiply-validation
 ## Шийдэгдсэн Өөрчлөлт
 
 Хоёр салбарын Javadoc комментийг нэгтгэж, хоёр талын мэдээллийг агуулсан шинэ Javadoc коммент үүсгэсэн. CI шалгалт (Checkstyle, 100% coverage) амжилттай болж, PR merge хийгдсэн.
-

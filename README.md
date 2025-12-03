@@ -2,6 +2,8 @@
 
 Энэхүү төсөл нь Maven-д суурилсан энгийн тооцоолуурын Java аппликейшн юм.
 
+**GitHub Repository**: https://github.com/yesuukhei/cs313_lab14.git
+
 ## Төслийн Бүтэц
 
 - **Package**: `lab14.sict.must.edu.mn`
@@ -16,16 +18,19 @@
 ## Хэрхэн Угсрах
 
 ### Бүх тест ажиллуулах
+
 ```bash
 mvn test
 ```
 
 ### Checkstyle код загварын шалгалт
+
 ```bash
 mvn checkstyle:check
 ```
 
 ### JaCoCo Code Coverage тайлан үүсгэх
+
 ```bash
 mvn jacoco:report
 ```
@@ -33,6 +38,7 @@ mvn jacoco:report
 Coverage тайлан нь `target/site/jacoco/index.html` файлд үүснэ.
 
 ### Бүх шалгалт (Checkstyle, Test, Coverage) нэгэн зэрэг
+
 ```bash
 mvn clean test checkstyle:check jacoco:report
 ```
@@ -44,9 +50,9 @@ mvn clean test checkstyle:check jacoco:report
 ## CI/CD
 
 GitHub Actions ашиглан автомат CI процесс тохируулагдсан:
+
 - Checkstyle код загварын шалгалт
 - JUnit тестүүд
 - JaCoCo 100% branch coverage шалгалт
 
 CI процесс нь `develop` болон `release/*` салбарууд руу хийсэн push болон pull request дээр автоматаар ажиллана.
-
